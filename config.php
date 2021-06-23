@@ -1,5 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
+
+//complete from Spotify Developer Console
 $clientID = "";
 $clientSecret ="";
 $redirect_uri = "http://localhost:80/SpotHistory/callback.php";
