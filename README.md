@@ -5,5 +5,5 @@ SpotHistory es una aplicación web que permite al usuario ver las últimas canci
 
 ## Configuración.
 1. Registrar la aplicación en la [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
-2. Actualizar en el fichero <b>config.php</b> los parámetros <b>clientID</b> y <b>clientSecret</b>.
-3. En el fichero config.php estblecer la uri de callback y registrarla (EXACTAMENTE IGUAL) en la lista blanca de URI's de redirección en la Spotify Developer Dashboard.
+2. Actualizar en el fichero <b>includes/config.php</b> los parámetros <b>clientID</b> y <b>clientSecret</b> proporcionados por Sportify.
+3. En el fichero config.php establecer la URI de callback y registrarla en la lista blanca de URI's de redirección en la Spotify Developer Dashboard.
