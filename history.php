@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once 'includes/config.php';
 if (isset($_POST['numSongs'])) {
     $url = "https://api.spotify.com/v1/me/player/recently-played?limit=" . $_POST['numSongs'];
 

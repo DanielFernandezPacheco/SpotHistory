@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once '../config.php';
 if (isset($_GET['code'])) {
     $state = $_GET['state'];
 
@@ -15,9 +15,9 @@ if (isset($_GET['code'])) {
     $_SESSION['accessToken'] = $session->getAccessToken();
     $_SESSION['refreshToken'] = $session->getRefreshToken();
 
-    header('Location: spotHistory.php');
+    header('Location: ../../spotHistory.php');
     die();
 }else{
-    header('Location: index.html');
+    header('Location: ../../index.html');
     die();
 }
