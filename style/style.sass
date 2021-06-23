@@ -1,0 +1,127 @@
+$background-color: #e0e0e0;
+$container-color: #ececec;
+$spotify-color: #1DB954;
+$font-color: #121212;
+$artist-color: #6f6f6f;
+$songName-color: $font-color;
+
+body
+    background-color: $background-color;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+.contenidoPrincipal
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+h1
+    color: $font-color;
+    text-align: center;
+    font-weight: lighter;
+
+.mainTitle
+    font-weight: bolder;
+    font-size: 50px;
+
+.logo
+    height: 300px;
+    width: 300px;
+
+.boton
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid $spotify-color;
+    font-size: 20px;
+    &:hover
+      background-color: $spotify-color;
+      color: white;
+
+.slidecontainer
+    width: 100%; /* Width of the outside container */
+
+.container
+    padding: 30px;
+    margin: 10px;    
+    background: $container-color;
+    box-shadow: 0 8px 30px 0 #3e3e3e5e;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+.song
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding-left: 15px;
+
+.songInfo
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 60px;
+    width: 100%;
+
+.songArtists
+    color: $artist-color;
+    text-decoration: none;
+    a   
+      color: $artist-color;
+
+.songName
+    margin-top: 10px;
+    font-size: 25px;
+    text-decoration: none; 
+    a   
+      color: $songName-color;
+
+a:link, a:active, a:visited
+  text-decoration: none;
+
+a:hover
+  text-decoration: dotted;
+
+.slider
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  background: #a9a9a9;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+    
+.slider:hover 
+  opacity: 1;
+
+
+.slider::-webkit-slider-thumb 
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  background: $spotify-color;
+  cursor: pointer;
+
+
+.slider::-moz-range-thumb 
+  width: 25px;
+  height: 25px;
+  background: $spotify-color;
+  border-radius: 100%;
+  cursor: pointer;
+
+    
+
