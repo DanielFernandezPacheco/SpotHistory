@@ -1,4 +1,4 @@
-# SpotHistory <img src="././images/SpotHistory.svg">
+# SpotHistory <img src="././images/SpotHistory.svg" height="40px">
 
 SpotHistory es una aplicación web que permite al usuario ver las últimas canciones que ha reproducido en Spotify.
 
