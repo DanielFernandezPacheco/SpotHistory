@@ -29,5 +29,5 @@
 
 
 
-    <script src="js/slider.js"></script>
+    <script src="includes/js/slider.js"></script>
 </body>
