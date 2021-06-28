@@ -1,4 +1,4 @@
-$background-color: #e0e0e0;
+$background-color: #b3b3b3;
 $container-color: #ececec;
 $spotify-color: #1DB954;
 $font-color: #121212;
@@ -59,18 +59,32 @@ h1
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
+.song_list
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10% 0 10%;
+
+    
 .song
     display: flex;
     align-items: center;
     font-size: 18px;
-    padding-left: 15px;
+    padding: 13px;
+    margin: 10px;
+    width: 100%;
+    background: $container-color;
+    box-shadow: 2px 2px 7px 3px #5454545e;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .songInfo
     padding-left: 15px;
     display: flex;
     flex-direction: column;
     min-height: 60px;
-    width: 100%;
 
 .songArtists
     color: $artist-color;
@@ -80,8 +94,9 @@ h1
 
 .songName
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 22px;
     text-decoration: none; 
+    word-break: normal;
     a   
       color: $songName-color;
 

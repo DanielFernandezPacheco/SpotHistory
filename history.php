@@ -39,7 +39,7 @@ if (isset($_POST['numSongs'])) {
 <body>
     <?php
     echo '<h1>Últimas ' . $_POST['numSongs'] . ' canciones</h1>';
-    echo '<div class="container">';
+    echo '<div class="song_list">';
 
     foreach ($result['items'] as $song) {
         echo '<div class="song">
@@ -61,7 +61,7 @@ if (isset($_POST['numSongs'])) {
                             <a href="' . $song['track']['external_urls']['spotify'] . '">' . $song['track']['name'] . '</a>
                         </span>
                     </div>';
-        echo '</div><hr><br>';
+        echo '</div>';
     }
 
     echo '</div>';
